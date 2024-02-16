@@ -1,0 +1,30 @@
+#posts ul {
+    padding: 0;
+}
+
+#posts ul li {
+    max-width: 34rem;
+    width: 50%;
+    margin: 1rem auto;
+    border-radius: 6px;
+    padding: 1rem 2rem;
+    background-color: white;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+#posts ul li h2 {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+#author {
+    margin: 0;
+    font-style: italic;
+}
+
+.post-action a{
+    color: royalblue;
+    margin: 0 1rem;
+    font-weight: bold;
+}
+
