@@ -1,0 +1,13 @@
+<li>
+    <h2><%= post.title %></h2>
+    <p id="author">By <%= post.author.name %></p>
+    <p><%= post.summary %></p>
+    <div class="post-action">
+      <form class="delete-post-form" action="/post-delete" method="POST">
+        <input type="hidden" name="postId" value="<%= post._id %>">
+        <button class="delete-btn" type="submit">Delete</button>
+      </form>
+      <a href="/post-update/<%= post._id %>">Edit Post</a>
+      <a href="/post-detail/<%= post._id %>">View Post</a>
+    </div>
+  </li>

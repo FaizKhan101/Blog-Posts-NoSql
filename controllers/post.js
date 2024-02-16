@@ -32,7 +32,6 @@ exports.postCreatePost = async (req, res, next) => {
     .getDb()
     .collection("authors")
     .findOne({ _id: new ObjectId(authorId) });
-  console.log(author);
   await db.getDb().collection("posts").insertOne({
     title: title,
     summary: summary,
